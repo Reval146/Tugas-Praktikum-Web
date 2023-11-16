@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cssbox3</title>
+    <style>
+        body {
+            margin: 0; /* Menghilangkan margin default pada body */
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row1-yellow {
+            background-color: yellow;
+            height: 100px;
+            flex-grow: 1;
+        }
+
+        .row1-orange {
+            background-color: orange;
+            height: 100px;
+            flex-grow: 3;
+        }
+
+        .row2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row2-green {
+            background-color: rgb(106, 248, 106);
+            height: 455px;
+            flex-grow: 1;
+        }
+
+        .row2-silver {
+            background-color: silver;
+            height: 455px;
+            flex-grow: 2;
+        }
+
+        .row2-blue {
+            background-color: rgb(0, 179, 255);
+            height: 455px;
+            flex-grow: 1;
+        }
+
+        .row3 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row3-aqua {
+            background-color: blue;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1-yellow"></div>
+        <div class="row1-orange"></div>
+    </div>
+
+    <div class="row2">
+        <div class="row2-green"></div>
+        <div class="row2-silver"></div>
+        <div class="row2-blue"></div>
+    </div>
+
+    <div class="row3">
+        <div class="row3-aqua"></div>
+    </div>
+</body>
+</html>
