@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        aside {
+            background-color: greenyellow;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        article {
+            background-color: red;
+            padding: 10px;
+            text-align: center;
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+           padding: 20px; 
+           max-width:100px;
+        }
+
+        footer {
+            background-color: rgb(255, 167, 3);
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Tampilan Header</header>
+        <main>
+            <aside>Tampilan Aside</aside>
+            <article>
+                <img src="Muhamad Reval Wijaya_Media.png" alt="">
+                <img src="Jihan_Sekre.png" alt="">
+                <img src="Dava_Konsumsi.png" alt="">
+            </article>
+        </main>
+        <footer>Tampilan Footer</footer>
+    </div>
+</body>
+</html>
