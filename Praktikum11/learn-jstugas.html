@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan Bilangan</title>
+</head>
+<body>
+
+    <h2>Penjumlahan Bilangan</h2>
+    <label for="bilangan1"></label>
+    <input type="number" id="bilangan1" onchange="hitungPenjumlahan()">
+    <h2>+</h2>
+    <label for="bilangan2"></label>
+    <input type="number" id="bilangan2" onchange="hitungPenjumlahan()">
+<h2>=</h2>
+    <label for="hasil"></label>
+    <input type="text" id="hasil" readonly>
+<br/>
+    <script>
+        function hitungPenjumlahan() {
+            // Ambil nilai dari input bilangan1 dan bilangan2
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value) || 0;
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value) || 0;
+
+            // Hitung penjumlahan
+            var hasil = bilangan1 + bilangan2;
+
+            // Tampilkan hasil pada input hasil
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+
+</body>
+</html>
